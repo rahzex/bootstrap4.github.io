@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>BootStrap Website</title>
+  </head>
+  <body>
+    <!-- NAVBAR WITH COLLAPSE BUTTON -->
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Resplash</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Services</a></li> -->
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Services</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-dollar-sign"></i> Pricing</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-shopping-cart"></i> Buy Photo</a
+                >
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-handshake"></i> Sell Photo</a
+                >
+                <hr />
+                <a href="#" class="dropdown-item"
+                  ><i class="fas fa-user"></i> Create Account</a
+                >
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- END NAVBAR WITH COLLAPSE BUTTON -->
+
+    <!-- SLIDER WITH CAPTIONS -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 m-auto">
+          <div id="slider" class="carousel slide mb-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#slider" data-slide-to="0"></li>
+              <li data-target="#slider" data-slide-to="1"></li>
+              <li data-target="#slider" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block img-fluid w-100"
+                  src="https://source.unsplash.com/user/matyssik/_GDff35-Pa8/1600x600"
+                  alt="First Slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Picture of The Day</h3>
+                  <p>
+                    This Marvelous Photo is taken by sit amet consectetur
+                    adipisicing elit. Possimus.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid w-100"
+                  src="https://source.unsplash.com/user/anniespratt/hxih8MDYutA/1600x600"
+                  alt="Second Slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Picture of Yesterday</h3>
+                  <p>
+                    This Marvelous Photo was taken by Sit Amet consectetur
+                    adipisicing elit. Possimus.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid w-100"
+                  src="https://source.unsplash.com/user/moino007/EX3gFC6eP4c/1600x600"
+                  alt="Third Slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Picture of All Time</h3>
+                  <p>
+                    This Photo was taken by Sit Amet consectetur adipisicing
+                    elit. Possimus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CONTROLS -->
+            <a href="#slider" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#slider" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION-1 WITH 3 COLUMNS -->
+
+    <div class="container">
+      <div class="row mb-3" id="section1">
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://source.unsplash.com/user/matyssik/_GDff35-Pa8/300x200"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">David Papillon</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+                quas.
+              </p>
+              <a class="btn btn-dark btn-block" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://source.unsplash.com/user/anniespratt/hxih8MDYutA/300x200"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Ian Matyssik</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+                quas.
+              </p>
+              <a class="btn btn-dark btn-block" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="https://source.unsplash.com/user/moino007/EX3gFC6eP4c/300x200"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Jakob Owens</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
+                quas.
+              </p>
+              <a class="btn btn-dark btn-block" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-sm-6">
+            <form>
+              <!-- TEXT FIELD GROUPS -->
+              <div class="form-group">
+                <h3>Register To Submit Your Photos</h3>
+                <label for="name">Name</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="name"
+                  placeholder="Enter name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  placeholder="Enter email"
+                />
+                <small class="form-text text-muted"
+                  >Your email will not ever be shared</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  readonly
+                />
+              </div>
+
+              <button class="btn btn-dark btn-block" type="submit">
+                Register
+              </button>
+            </form>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-primary">
+                <h4 class="list-group-item-heading">We Are Resplash</h4>
+                <p class="list-group-item-text">
+                  We feature photos from awesome photographers, consectetur
+                  adipisicing elit, sed do eiusmod borum.
+                </p>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-success">
+                <h4 class="list-group-item-heading">Our Manifesto</h4>
+                <p class="list-group-item-text">
+                  We are always updating lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit, sed do eiusmod borum.
+                </p>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-warning">
+                <h4 class="list-group-item-heading">Earn With Us</h4>
+                <p class="list-group-item-text">
+                  Upload photos and win prizes orem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod borum.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <h6>Copyright &copy; 2019 Subhajit Pal</h6>
+          </div>
+
+          <div class="col-sm-4">
+            <h6>About Us</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="col-sm-2">
+            <h6>Navigation</h6>
+            <ul class="list-unstyled">
+              <li><a class="text-light" href="#">Home</a></li>
+              <li><a class="text-light" href="#">Services</a></li>
+              <li><a class="text-light" href="#">Links</a></li>
+              <li><a class="text-light" href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-2">
+            <h6>Follow Us</h6>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fab fa-facebook-square"></i
+                ><a
+                  class="text-light ml-1"
+                  class="text-light"
+                  href="https://facebook.com"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-twitter"></i
+                ><a class="text-light ml-1" href="https://twitter.com"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i
+                ><a class="text-light ml-1" href="https://gmail.com">Email</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-2">
+            <h6>Visit Us</h6>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-location-arrow"></i
+                ><a class="text-light ml-1" href="#">Address</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i
+                ><a class="text-light ml-1" href="#"> Location</a>
+              </li>
+              <li>
+                <i class="fas fa-directions"></i
+                ><a class="text-light ml-1" href="#">Direction</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
